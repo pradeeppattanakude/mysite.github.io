@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'ubuntu', sans-serif;
+}
+
+nav .navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navbar .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: #4070f4;
+}
+
+nav .navbar .menu{
+    display: flex;
+}
+
+nav .navbar .menu li{
+    margin: 0 8px;
+    list-style: none;
+}
+
+.navbar .menu li a{
+    font-size: 18px;
+    font-size: 500;
+    color: #0E2431;
+}
+
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: #4070f4;
+
+}
+
+nav .menu-btn,
+.navbar .cancel-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 30px;
+    top: 20px;
+}
+nav .menu-btn{
+    color: #4070f4;
+}
+
+@media (max-width: 750px) {
+    nav .navbar .menu{
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: #0E2431;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+    }
+    .navbar .media-icons a{
+        display: block;
+        margin: 10px 0;
+        font-size: 23px;
+        color: #fff;
+    }
+
+    .navbar .media-icons a{
+        display: none;
+    }
+}
